@@ -20,7 +20,6 @@ jobs:
             channels=$(python3 allChannels.py 2>/dev/null |tr -d '\0' | tail -n1)
             cd ..
             git add .
-            git commit -m "Updated allChannels.json of $channels channels at "$(date -u +%D-%T%P)""
             git commit --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" -m "Updated allChannels.json of $channels channels at "$(date -u +%D-%T%P)""
             git push
             exit
