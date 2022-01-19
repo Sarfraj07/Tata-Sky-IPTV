@@ -15,7 +15,7 @@ jobs:
       run: |
             git config --global user.name "Shra1V32"
             git config --global user.email "namanageshwar@outlook.com"
-            git clone "https://${{ secrets.my_token }}@github.com/ForceGT/Tata-Sky-IPTV.git"
+            git clone "https://${{ secrets.my_token }}@github.com/Shra1V32/Tata-Sky-IPTV.git"
             cd Tata-Sky-IPTV/code_samples
             channels=$(python3 allChannels.py 2>/dev/null |tr -d '\0' | tail -n1)
             cd ..
